@@ -1,0 +1,6 @@
+{
+  "name": "MelodyCraft Pro",
+  "description": "Universal AI Music Production Studio & Distribution Platform for All Genres (Pop, Electronic, R&B, Latin Urban, Corridos & More).",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Dynamic infinite loading bar for our custom composing animation */
+  @keyframes progressLoading {
+    0% {
+      left: -100%;
+      width: 50%;
+    }
+    50% {
+      width: 30%;
+    }
+    100% {
+      left: 100%;
+      width: 50%;
+    }
+  }
+
+  .animate-progress-loading {
+    position: relative;
+    animation: progressLoading 2s infinite linear;
+  }
+
+  @keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .animate-spin-slow {
+    animation: spinSlow 12s linear infinite;
+  }
+
+  /* Sophisticated custom scrollbar for the lyrics and stanzas box */
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #1c1917; /* stone-900 */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #78350f; /* amber-900 */
+    border-radius: 3px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #b45309; /* amber-700 */
+  }
+}
+
